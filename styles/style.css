@@ -1,2 +1,33 @@
-/* место для вашего кода */
+body {
+  font-weight: 200;
+  background-color: white;
+}
+
+content-section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100 ;
+  height: ;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.logo-yt {
+  width: 26px;
+  height: 20px;
+}
+
+.logo-vk {
+  width: 29.12px;
+  height: 18px;
+}
+
+.logo-pinterest {
+  width: 17px;
+  height: 22px;
+}
+
 
