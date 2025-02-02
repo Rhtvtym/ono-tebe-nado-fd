@@ -10,15 +10,20 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="header_menu">
-        <ul class="header_links-list">
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit"><a class="header__link_active">главная</a></li>
-          <li class="header__links-list-item"><a class="header__link">посмотреть лоты</a></li>
-          <li class="header__links-list-item"><a class="header__link">об аукционе</a></li>
+          <li class="header__links-list-item"><a class="header__link" href="#0">посмотреть лоты</a></li>
+          <li class="header__links-list-item"><a class="header__link" href="#0">об аукционе</a></li>
         </ul>
       </nav>
-      <a class="header__logo"><img class="header__logo-image" src="images/logo-black.svg" alt="логотип"/></a>
+      <a class="header__logo">
+        <img 
+          class="header__logo-image"
+          src="images/logo-black.svg" 
+          alt="логотип"/>
+      </a>
       <address class="address">
         <a href="tel:+9 999 555 5555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -27,11 +32,10 @@
     </header>
     <main>
       <section class="cover overlay content-section">
-        <div class="image"><img src="/images/cover.jpg"/></div>
         <h1 class="cover__title">
-          <span>Оно</span>
-          <span>тебе</span>
-          <span>надо</span>
+          <span class="cover-span">Оно</span>
+          <span class="cover-span text-center" >тебе</span>
+          <span class="cover-span text-right">надо</span>
         </h1>
       
         <div class="cover__description content-section">
@@ -59,7 +63,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <address class="address">
         <a href="tel:+9 999 555 5555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
