@@ -1,11 +1,11 @@
 
 
 .header {
+  height: 293px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items:center;
-  padding: 0;
-  height: 293;
+  align-content: center;
+  
 }
 
 .header__logo {
@@ -17,16 +17,22 @@
 }
 .header__menu {
   display: flex;
-  flex-direction: row;
-  height: 22px;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
 }
 
 .header__links-list {
-  display: inline;
+  list-style-position: inside;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  
 }
 
 .header__links-list-item {
   list-style: circle;
+  list-style-position: inside;
   display: inline;
 }
 
@@ -62,6 +68,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+  margin-bottom: 180px;
 }
 
 .cover__title {
@@ -88,6 +95,24 @@
 
 .cover__description-text {
   padding-top: 106px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.1em;
+  display: inline;
+}
+
+.bet-button { 
+  width: 256px;
+  height: 51px;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin: 106px 50px 50px;
 }
 .text-right {
   text-align: right;
@@ -98,83 +123,178 @@
 }
 
 .lots {
-  
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 120px;
+  width: 1052px;
+  height: 723px;
+}
+
+.overlay {
+
+}
+
+.lots__heading {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  color: #000;
+  margin-left: 40px; 
 }
 
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, fr);
-  justify-content: space-between;
   gap: 25px;
   width: 1052px ;
-  height: 723px;
-  padding: 74px 24px 53px 24px;
   list-style-image: none; 
+  margin-bottom: 30px;
+}
+
+.lots__card-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  
 }
 
 .card__text {
-  display: grid;
+  display: flex;
+  align-items: flex-end;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #fff;
-  padding-bottom: 48px;
 }
 
 .card__title {
-font-weight: 700;
-font-size: 22px;
-line-height: 120%;
-text-transform: uppercase;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: #fff;
+  display: grid;
+  align-items: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
 }
 
 .lot-film {
-  display: inline;
   background-image: url(/images/card-lot-01.jpg);
   width: 334px;
-  min-height: 596px;
-  padding-bottom: 48px;
-  
+  height: 596px;
 }
 
 .lot-book {
   background-image: url(/images/card-lot-02.jpg);
-  display: inline;
   width: 334px;
-  min-height: 596px;
+  height: 596px;
   grid-column: 2;
-  
 }
 
 .lot-picture {
   background-image: url(/images/card-lot-03.jpg);
-  display: inline;
   width: 334px;
-  min-height: 596px;
+  height: 596px;
   grid-column: 3;
-}
-.lots {
-  padding: 0 24px;
-  width: 1052px;
-  height: 723px;
 }
 
 .about {
-  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, fr);
+  gap: 25px;
   width: 1052px;
   height: 595px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.about__logo {
+  position: relative;
+  background: #000;
+  border-radius: 100%;
+  z-index: 1;
+  width: 240px;
+  height: 240px;
+  margin-left: 47px;
+  margin-top: 35px;
+}
+
+.about__logo-image {
+  display: block;
+  align-items: center;
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  grid-column: 2/ span 2;
+
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
+  grid-column: 2/ span 2;
+
 }
 
 .footer {
+  display: grid;
+  grid-template-columns: repeat(3, fr);
   width: 1100px;
   height: 180px;
-  padding: 0;
+}
+
+.address {
 
 }
 
+.footer__menu {
+  grid-column: 2;
+}
+
+.footer__menu-list {
+
+}
+
+.footer__menu-link_active {
+
+}
+
+.footer__menu-link {
+
+}
+
+.footer__social-list {
+  grid-column: 3;
+}
+
+.footer__social-list-item {
+
+}
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+
+}
 .logo-yt {
   width: 26px;
   height: 20px;
