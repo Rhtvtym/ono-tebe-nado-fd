@@ -31,24 +31,36 @@
       </address>
     </header>
     <main>
-      <section class="cover overlay">
+      <section class="cover">
+        <!--<img class="cover" src="/images/cover.jpg" alt="фоновое изображение">-->
+        
         <h1 class="cover__title">
+          <div class="overlay__cover"></div>
           <span class="cover-span">Оно</span>
           <span class="cover-span text-center" >тебе</span>
           <span class="cover-span text-right">надо</span>
         </h1>
-      
         <div class="cover__description">
           <p class="cover__description-text">Аукцион вещей, вкоторые никто не верил</p>
           <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
-      <section class="lots overlay">
+      <section class="lots ">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item lot-film"><a><h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3></a><article class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</article></li>
-          <li class="lots__card-list-item lot-book"><a><h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3></a><article class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</article></li>
-          <li class="lots__card-list-item lot-picture"><a><h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3></a><article class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</article></li>
+          <li class="lots__card-list-item lot-film">
+            <div class="overlay__film"></div>
+            <a><h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3></a>
+            <article class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</article>
+            </li>
+          <li class="lots__card-list-item lot-book">
+            <div class="overlay__book"></div>
+            <a><h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3></a>
+            <article class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</article></li>
+          <li class="lots__card-list-item lot-picture">
+            <div class="overlay__picture"></div>
+            <a><h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3></a>
+            <article class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</article></li>
         </ul>
         <a class="lots__look-more-link">Посмотреть больше</a>
       </section>
