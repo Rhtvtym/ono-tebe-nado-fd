@@ -9,7 +9,6 @@ body {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-content: center;
-
 }
 
 .header__logo {
@@ -32,7 +31,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #000;
-
 }
 
 .header__links-list-item {
@@ -46,12 +44,8 @@ body {
   display: inline;
 }
 
-.header__link_active {}
-
-.header__link {}
-
 .address {
-  text-align: right;
+  text-align: left;
   padding-left: 184px;
   max-width: 424px;
   font-weight: 400;
@@ -64,6 +58,7 @@ body {
   position: relative;
   background-image: url(/images/cover.jpg);
   width: 1100px;
+  height: 757px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -89,19 +84,21 @@ body {
   text-transform: uppercase;
   color: #fff;
   padding-top: 165px;
+  padding-left: 50px;
 }
 
 .cover-span {
   position: relative;
   z-index: 2;
   display: block;
-  padding-left: 26px;
+  margin-bottom: 20px;
+  
 }
 
 .cover__description {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: space-between;
   text-align: end;
 }
 
@@ -114,8 +111,9 @@ body {
   line-height: 127%;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 1.1em;
   display: inline;
+  margin-left: 50px;
+  word-spacing: 1.1em;
 }
 
 .bet-button {
@@ -128,7 +126,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  margin: 106px 50px 50px;
+  border: 1px solid #fff;
+  width: 256px;
+  height: 51px;
+  margin: 100px 50px 50px;
+  background: none ;
 }
 
 .text-right {
@@ -177,7 +179,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
-
 }
 
 .card__text {
@@ -262,8 +263,7 @@ body {
   grid-template-columns: 334px 1fr 1fr;
   align-items: center;
   gap: 25px;
-  width: 1052px;
-  height: 595px;
+  margin-bottom: 180px;
 }
 
 .about__logo {
@@ -287,13 +287,11 @@ body {
 }
 
 .about__title {
-  
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
   grid-column: 2/ span 2;
-
 }
 
 .about__text {
@@ -302,49 +300,59 @@ body {
   line-height: 120%;
   color: #000;
   grid-column: 2/ span 2;
-
 }
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, fr);
-  width: 1100px;
-  height: 180px;
+  grid-template-columns: 1fr 1fr 334px;
+  min-height: 180px;
 }
 
-.address {}
+.address__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  color: #000;
+  margin-left: 26px;
+}
 
 .footer__menu {
   grid-column: 2;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
 }
 
-.footer__menu-list {}
-
-.footer__menu-link_active {}
-
-.footer__menu-link {}
+.footer__menu-list {
+  list-style-type: none;
+}
 
 .footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   grid-column: 3;
+  list-style-type: none;
 }
 
-.footer__social-list-item {}
-
-.footer__social-link {}
-
-.footer__social-icon {}
-
 .logo-yt {
-  width: 26px;
-  height: 20px;
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 .logo-vk {
-  width: 29.12px;
-  height: 18px;
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 .logo-pinterest {
-  width: 17px;
-  height: 22px;
+  display: block;
+  width: 48px;
+  height: 48px;
 }
